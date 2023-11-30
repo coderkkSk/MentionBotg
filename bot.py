@@ -41,7 +41,16 @@ RUn = yone.start(bot_token=BOT_TOKEN)
 
 @yone.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**Hey, I'm Yone Mention Bot**, I can Tag almost all members in group or channel \nHit Command - **/help** for more information\n\n",
+  await event.reply(
+      "**Hey, I'm Yone Mention Bot**, I can Tag almost all members in group or channel \nHit Command - **/help** for more information\n\n",
+      link_preview=False,
+    buttons=(
+      [
+        Button.url('📣 OWNER', 'https://t.me/Lahriii')
+      ]
+    )
+  )
+                    
                     
 
 
