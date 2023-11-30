@@ -1,5 +1,6 @@
 {
     "name": "MentionBot",
+    "logo": "https://te.legra.ph/file/a6836f74f5326eddd0292.jpg",
     "description": "A simple mention all for telegram.",
     "env": {
         "BOT_TOKEN": {
